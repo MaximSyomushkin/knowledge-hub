@@ -1,0 +1,16 @@
+vault = 'C:\path\to\your\vault'
+# Year folders holding <Course>/Lecture N/ (missing folders are fine). Each gets lecture and course hub notes.
+school_dirs = ["ReadWrite/Year-1", "ReadWrite/Year-2"]
+memory_dir = "ReadWrite/Memory"   # memory.md (tasks and events); watcher state goes in its .state/ folder
+ideas_dir = "ReadWrite/Ideas"     # one note per idea
+
+# The model that reads memory messages and writes idea summaries. A small local model is enough (weekdays are
+# worked out in code), or point `url` at any OpenAI-compatible LLM endpoint.
+[llm]
+url = "http://127.0.0.1:8080"     # OpenAI-compatible server, e.g. llama-server
+model = "Qwen3.5-4B-Q8_0"
+timeout_s = 600
+
+# A Discord user id to @mention first in every digest (so it pings); empty = no mention.
+[digest]
+mention = ""

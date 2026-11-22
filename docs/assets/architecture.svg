@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Knowledge Hub architecture diagram">
+  <defs>
+    <marker id="arrowIndigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#818CF8"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#A78BFA"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#4ADE80"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#FBBF24"/>
+    </marker>
+  </defs>
+
+  <!-- Outer container -->
+  <rect x="1" y="1" width="1198" height="438" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- Column headers -->
+  <g font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="1.2">
+    <text x="36" y="36" fill="#94A3B8">01 · INPUTS</text>
+    <text x="386" y="36" fill="#A78BFA">02 · ENGINE &amp; MODELS</text>
+    <text x="848" y="36" fill="#4ADE80">03 · OBSIDIAN VAULT &amp; DELIVERY</text>
+  </g>
+  <line x1="36" y1="48" x2="316" y2="48" stroke="#21262D" stroke-width="1"/>
+  <line x1="386" y1="48" x2="778" y2="48" stroke="#21262D" stroke-width="1"/>
+  <line x1="848" y1="48" x2="1164" y2="48" stroke="#21262D" stroke-width="1"/>
+
+  <!-- COLUMN 1: INPUTS -->
+  <g transform="translate(36, 66)">
+    <rect width="280" height="94" rx="12" fill="#161B22" stroke="#5865F2" stroke-width="1.4"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#5865F2" fill-opacity="0.22"/>
+    <circle cx="30" cy="30" r="7" fill="#818CF8"/>
+    <text x="58" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700">Discord</text>
+    <text x="58" y="46" fill="#94A3B8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5">#memory · text &amp; voice</text>
+    <text x="16" y="75" fill="#CBD5E1" font-family="'SFMono-Regular', Consolas, monospace" font-size="11">/remember · /idea · /todo · /browse</text>
+  </g>
+
+  <g transform="translate(36, 178)">
+    <rect width="280" height="94" rx="12" fill="#161B22" stroke="#0EA5E9" stroke-width="1.4"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#0EA5E9" fill-opacity="0.20"/>
+    <polygon points="23,30 37,23 33,37 29,32" fill="#38BDF8"/>
+    <text x="58" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700">Telegram DM</text>
+    <text x="58" y="46" fill="#94A3B8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5">private quick-capture chat</text>
+    <text x="16" y="75" fill="#CBD5E1" font-family="'SFMono-Regular', Consolas, monospace" font-size="11">text · voice notes · undo buttons</text>
+  </g>
+
+  <g transform="translate(36, 290)">
+    <rect width="280" height="110" rx="12" fill="#161B22" stroke="#8B5CF6" stroke-width="1.4"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#8B5CF6" fill-opacity="0.22"/>
+    <rect x="22" y="23" width="16" height="13" rx="2" fill="none" stroke="#C4B5FD" stroke-width="2"/>
+    <text x="58" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700">Course Folders</text>
+    <text x="58" y="46" fill="#94A3B8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11">&lt;year&gt;/&lt;Course&gt;/Lecture N/</text>
+    <text x="16" y="75" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">PDFs, study guides &amp; your notes</text>
+    <text x="16" y="94" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Never overwritten by Knowledge Hub</text>
+  </g>
+
+  <!-- COLUMN 2: ENGINE -->
+  <!-- Row 1: Hermes Plugin -> khub CLI -->
+  <g transform="translate(386, 66)">
+    <rect width="178" height="122" rx="12" fill="#161B22" stroke="#3B82F6" stroke-width="1.4"/>
+    <text x="16" y="26" fill="#93C5FD" font-family="'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="700">HERMES PLUGIN</text>
+    <text x="16" y="48" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700">knowledge_hub</text>
+    <text x="16" y="71" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• Slash commands</text>
+    <text x="16" y="89" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• Button folder picker</text>
+    <text x="16" y="107" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• Idea/task undo UI</text>
+  </g>
+
+  <g transform="translate(594, 66)">
+    <rect width="184" height="122" rx="12" fill="#1B1834" stroke="#A78BFA" stroke-width="1.6"/>
+    <text x="16" y="26" fill="#C4B5FD" font-family="'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="700">PYTHON CLI</text>
+    <text x="16" y="48" fill="#F8FAFC" font-family="'SFMono-Regular', Consolas, monospace" font-size="16" font-weight="700">khub</text>
+    <text x="16" y="71" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• memory-add / list / done</text>
+    <text x="16" y="89" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• digest / remind</text>
+    <text x="16" y="107" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12">• lecture-notes / watch</text>
+  </g>
+
+  <!-- Row 2: Model Server (left) + khub watch (right) -->
+  <g transform="translate(386, 208)">
+    <rect width="178" height="86" rx="12" fill="#1E1A12" stroke="#F59E0B" stroke-width="1.3"/>
+    <text x="16" y="26" fill="#FCD34D" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="700">ANY LLM</text>
+    <text x="16" y="48" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">Local or Cloud LLM</text>
+    <text x="16" y="68" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">llama-server / any API</text>
+  </g>
+
+  <g transform="translate(594, 208)">
+    <rect width="184" height="86" rx="12" fill="#161B22" stroke="#A78BFA" stroke-width="1.3"/>
+    <circle cx="24" cy="23" r="4.5" fill="#4ADE80"/>
+    <text x="36" y="27" fill="#F8FAFC" font-family="'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="700">khub watch (60s)</text>
+    <text x="16" y="49" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">• Lecture &amp; course hubs</text>
+    <text x="16" y="67" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">• Task expiry &amp; heartbeat</text>
+  </g>
+
+  <!-- Row 3: Hermes Cron bar -->
+  <g transform="translate(386, 314)">
+    <rect width="392" height="86" rx="12" fill="#11221B" stroke="#22C55E" stroke-width="1.4"/>
+    <text x="18" y="27" fill="#86EFAC" font-family="'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="700">HERMES CRON · ZERO-LLM DIGESTS &amp; ALERTS</text>
+    <text x="18" y="50" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">khub digest / khub remind</text>
+    <text x="18" y="70" fill="#CBD5E1" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">08:00 daily · Fri/Sat weekend · Sun weekly · 15m remind</text>
+  </g>
+
+  <!-- COLUMN 3: OUTPUTS -->
+  <g transform="translate(848, 66)">
+    <rect width="316" height="74" rx="12" fill="#161B22" stroke="#38BDF8" stroke-width="1.4"/>
+    <text x="16" y="26" fill="#38BDF8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700">ReadWrite/Memory/memory.md</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Obsidian Tasks &amp; Events</text>
+    <text x="16" y="63" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Due dates, times, repeats &amp; auto-expiry</text>
+  </g>
+
+  <g transform="translate(848, 154)">
+    <rect width="316" height="74" rx="12" fill="#161B22" stroke="#FBBF24" stroke-width="1.4"/>
+    <text x="16" y="26" fill="#FCD34D" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700">ReadWrite/Ideas/&lt;idea&gt;.md</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">One Markdown Note per Idea</text>
+    <text x="16" y="63" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Auto summary · raw log · protected My Notes</text>
+  </g>
+
+  <g transform="translate(848, 242)">
+    <rect width="316" height="74" rx="12" fill="#161B22" stroke="#A78BFA" stroke-width="1.4"/>
+    <text x="16" y="26" fill="#C4B5FD" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700">Lecture N.md + &lt;Course&gt;.md</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Connected Obsidian Graph Hubs</text>
+    <text x="16" y="63" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Prev/next chain · sheet links · embedded PDF</text>
+  </g>
+
+  <g transform="translate(848, 330)">
+    <rect width="316" height="70" rx="12" fill="#11221B" stroke="#4ADE80" stroke-width="1.4"/>
+    <text x="16" y="26" fill="#86EFAC" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700">Discord #daily &amp; #weekly</text>
+    <text x="16" y="48" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Digests, Idea of the Day &amp; Alerts</text>
+  </g>
+
+  <!-- ARROWS -->
+  <g fill="none" stroke-width="1.8">
+    <!-- Discord & Telegram -> Hermes Plugin -->
+    <path d="M 316 113 L 383 113" stroke="#818CF8" marker-end="url(#arrowIndigo)"/>
+    <path d="M 316 225 C 350 225, 350 150, 383 150" stroke="#38BDF8" marker-end="url(#arrowCyan)"/>
+
+    <!-- Course Folders -> khub watch (routed cleanly below Model Server) -->
+    <path d="M 316 330 C 352 330, 352 303, 578 303 C 588 303, 588 274, 591 274" stroke="#A78BFA" stroke-dasharray="5 3" marker-end="url(#arrowPurple)"/>
+
+    <!-- Hermes Plugin -> khub CLI -->
+    <path d="M 564 127 L 591 127" stroke="#A78BFA" marker-end="url(#arrowPurple)"/>
+
+    <!-- khub CLI <-> Local LLM -->
+    <path d="M 632 188 C 632 199, 475 196, 475 205" stroke="#FBBF24" marker-end="url(#arrowAmber)"/>
+
+    <!-- khub CLI -> memory.md & Ideas/ -->
+    <path d="M 778 103 L 845 103" stroke="#38BDF8" marker-end="url(#arrowCyan)"/>
+    <path d="M 778 148 C 814 148, 814 191, 845 191" stroke="#FBBF24" marker-end="url(#arrowAmber)"/>
+
+    <!-- khub watch -> Lecture hubs -->
+    <path d="M 778 260 C 814 260, 814 279, 845 279" stroke="#A78BFA" marker-end="url(#arrowPurple)"/>
+
+    <!-- Hermes Cron -> Discord Digests -->
+    <path d="M 778 364 L 845 364" stroke="#4ADE80" marker-end="url(#arrowGreen)"/>
+  </g>
+</svg>

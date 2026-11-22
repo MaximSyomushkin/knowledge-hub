@@ -1,0 +1,10 @@
+<resources>
+    <color name="bg">#1E1E1E</color>
+    <color name="ink">#E6ECEA</color>
+    <color name="muted">#93A3A6</color>
+    <color name="line">#34403F</color>
+    <color name="separator">#9934403F</color>
+    <color name="live">#2DB8A6</color>
+    <color name="warn">#E28C50</color>
+    <color name="bad">#E8685C</color>
+</resources>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="1200" height="390" role="img" aria-label="Obsidian lecture chain graph and generated Lecture 2 hub note">
+  <defs>
+    <radialGradient id="nodeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="388" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- LEFT: OBSIDIAN GRAPH VIEW -->
+  <g transform="translate(24, 24)">
+    <rect width="636" height="342" rx="12" fill="#11161F" stroke="#2D333B" stroke-width="1.2"/>
+    <text x="20" y="28" fill="#94A3B8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="0.9">OBSIDIAN GRAPH VIEW · AUTO-MAINTAINED BY KHUB WATCH</text>
+
+    <!-- Course Hub glow -->
+    <circle cx="318" cy="108" r="56" fill="url(#nodeGlow)"/>
+
+    <!-- Edges: Course Hub to Lectures -->
+    <g stroke="#7C3AED" stroke-opacity="0.7" stroke-width="1.8">
+      <line x1="318" y1="108" x2="112" y2="206"/>
+      <line x1="318" y1="108" x2="250" y2="210"/>
+      <line x1="318" y1="108" x2="386" y2="210"/>
+      <line x1="318" y1="108" x2="524" y2="206"/>
+    </g>
+
+    <!-- Edges: Lecture chain -->
+    <g stroke="#38BDF8" stroke-width="2.5">
+      <line x1="112" y1="206" x2="250" y2="210"/>
+      <line x1="250" y1="210" x2="386" y2="210"/>
+      <line x1="386" y1="210" x2="524" y2="206"/>
+    </g>
+
+    <!-- Edges: Satellite sheets -->
+    <g stroke="#475569" stroke-width="1.4">
+      <line x1="112" y1="206" x2="72" y2="266"/>
+      <line x1="112" y1="206" x2="144" y2="268"/>
+
+      <line x1="250" y1="210" x2="204" y2="270"/>
+      <line x1="250" y1="210" x2="250" y2="278"/>
+      <line x1="250" y1="210" x2="296" y2="270"/>
+
+      <line x1="386" y1="210" x2="354" y2="270"/>
+      <line x1="386" y1="210" x2="418" y2="270"/>
+
+      <line x1="524" y1="206" x2="492" y2="268"/>
+      <line x1="524" y1="206" x2="564" y2="266"/>
+    </g>
+
+    <!-- Course Hub Node -->
+    <circle cx="318" cy="108" r="16" fill="#A78BFA" stroke="#F5F3FF" stroke-width="2.2"/>
+    <text x="318" y="78" text-anchor="middle" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">Intro to Physics.md</text>
+
+    <!-- Lecture Nodes -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">
+      <circle cx="112" cy="206" r="11" fill="#0EA5E9" stroke="#E0F2FE" stroke-width="1.8"/>
+      <text x="112" y="186" text-anchor="middle" fill="#BAE6FD">Lecture 1</text>
+
+      <!-- Highlighted Lecture 2 -->
+      <circle cx="250" cy="210" r="17" fill="#38BDF8" fill-opacity="0.22"/>
+      <circle cx="250" cy="210" r="12" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2.2"/>
+      <text x="250" y="188" text-anchor="middle" fill="#FFFFFF">Lecture 2</text>
+
+      <circle cx="386" cy="210" r="11" fill="#0EA5E9" stroke="#E0F2FE" stroke-width="1.8"/>
+      <text x="386" y="188" text-anchor="middle" fill="#BAE6FD">Lecture 3</text>
+
+      <circle cx="524" cy="206" r="11" fill="#0EA5E9" stroke="#E0F2FE" stroke-width="1.8"/>
+      <text x="524" y="186" text-anchor="middle" fill="#BAE6FD">Lecture 4</text>
+    </g>
+
+    <!-- Satellite Nodes -->
+    <g stroke="#1E293B" stroke-width="1.5">
+      <circle cx="72" cy="266" r="6" fill="#94A3B8"/>
+      <circle cx="144" cy="268" r="6" fill="#4ADE80"/>
+
+      <circle cx="204" cy="270" r="6" fill="#94A3B8"/>
+      <circle cx="250" cy="278" r="6" fill="#94A3B8"/>
+      <circle cx="296" cy="270" r="6" fill="#4ADE80"/>
+
+      <circle cx="354" cy="270" r="6" fill="#94A3B8"/>
+      <circle cx="418" cy="270" r="6" fill="#4ADE80"/>
+
+      <circle cx="492" cy="268" r="6" fill="#94A3B8"/>
+      <circle cx="564" cy="266" r="6" fill="#4ADE80"/>
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(20, 316)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">
+      <circle cx="6" cy="-4" r="5" fill="#A78BFA"/>
+      <text x="17" y="0" fill="#CBD5E1">Course hub</text>
+
+      <circle cx="112" cy="-4" r="5" fill="#38BDF8"/>
+      <text x="123" y="0" fill="#CBD5E1">Lecture chain (auto-linked)</text>
+
+      <circle cx="298" cy="-4" r="5" fill="#94A3B8"/>
+      <text x="309" y="0" fill="#CBD5E1">Study / practical sheets</text>
+
+      <circle cx="468" cy="-4" r="5" fill="#4ADE80"/>
+      <text x="479" y="0" fill="#86EFAC">Your *_mynotes.md</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: GENERATED LECTURE 2.MD PREVIEW -->
+  <g transform="translate(684, 24)">
+    <rect width="492" height="342" rx="12" fill="#161B22" stroke="#38BDF8" stroke-width="1.3"/>
+    <rect width="492" height="38" rx="12" fill="#1F242D"/>
+    <rect y="26" width="492" height="12" fill="#1F242D"/>
+    <circle cx="18" cy="19" r="4.5" fill="#38BDF8"/>
+    <text x="32" y="23" fill="#F8FAFC" font-family="'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="700">Intro-to-Physics/Lecture 2/Lecture 2.md</text>
+
+    <g transform="translate(18, 56)" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5">
+      <text x="0" y="14" fill="#64748B">---</text>
+      <text x="0" y="31" fill="#94A3B8">course: Intro to Physics</text>
+      <text x="0" y="48" fill="#94A3B8">lecture: 2 · topic: Newton's Laws</text>
+      <text x="0" y="65" fill="#94A3B8">type: lecture · tags: [lecture-hub] · cssclasses: [study]</text>
+      <text x="0" y="82" fill="#64748B">---</text>
+
+      <text x="0" y="110" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="800">Lecture 2: Newton's Laws</text>
+
+      <text x="0" y="136" fill="#C4B5FD">↑ [[.../Intro to Physics|Intro to Physics]]</text>
+      <text x="0" y="156" fill="#7DD3FC">← [[.../Lecture 1|Lecture 1]]  ·  [[.../Lecture 3|Lecture 3]] →</text>
+      <text x="0" y="176" fill="#CBD5E1">[[...|Lecture notes]] · [[...|Practical]] · [[...|My notes]]</text>
+
+      <!-- Embedded PDF pill -->
+      <rect x="0" y="190" width="456" height="30" rx="6" fill="#11161F" stroke="#30363D" stroke-width="1"/>
+      <text x="12" y="209" fill="#94A3B8">![[ReadWrite/Year-1/Intro-to-Physics/.../Lecture2.pdf]]</text>
+
+      <!-- Protected My Notes -->
+      <rect x="0" y="232" width="456" height="42" rx="8" fill="#0F291E" stroke="#16A34A" stroke-width="1"/>
+      <text x="12" y="250" fill="#86EFAC" font-weight="700">## My Notes</text>
+      <text x="12" y="266" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Your annotations here are preserved across every hub refresh.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+khub.toml
+widgets/rainmeter/Tasks/
+widgets/android/.gradle/
+widgets/android/.kotlin/
+widgets/android/build/
+widgets/android/app/build/
+widgets/android/local.properties

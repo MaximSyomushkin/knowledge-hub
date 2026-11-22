@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Companion Tasks Widget preview for Windows Desktop (Rainmeter) and Android">
+  <defs>
+    <!-- Authentic 22x22 subtle grid tile from rainmeter/build.py -->
+    <pattern id="widgetGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="desktopBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E151B"/>
+      <stop offset="55%" stop-color="#111C24"/>
+      <stop offset="100%" stop-color="#0D171A"/>
+    </linearGradient>
+    <radialGradient id="tealGlow" cx="0.25" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#2DB8A6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#2DB8A6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="phoneWall" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#111922"/>
+      <stop offset="100%" stop-color="#0A1116"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Outer container -->
+  <rect x="1" y="1" width="1198" height="438" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- LEFT: WINDOWS DESKTOP (RAINMETER) — tasks + events + synced footer -->
+  <g transform="translate(24, 24)">
+    <rect width="560" height="392" rx="12" fill="url(#desktopBg)" stroke="#263138" stroke-width="1.2"/>
+    <rect width="560" height="392" rx="12" fill="url(#tealGlow)"/>
+
+    <text x="20" y="28" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="0.9">WINDOWS DESKTOP · RAINMETER SKIN (LUA)</text>
+    <text x="540" y="28" text-anchor="end" fill="#64748B" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">Tasks + Events</text>
+
+    <!-- Actual 340px Rainmeter Tasks card -->
+    <g transform="translate(110, 46)" filter="url(#cardShadow)">
+      <rect width="340" height="292" rx="10" fill="#1E1E1E" stroke="#34403F" stroke-width="1.2"/>
+      <rect x="1" y="1" width="338" height="290" rx="9" fill="url(#widgetGrid)"/>
+
+      <!-- Header -->
+      <text x="16" y="30" fill="#E6ECEA" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700">Tasks</text>
+      <text x="324" y="29" text-anchor="end" fill="#93A3A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">4 open · FRI 09 OCT</text>
+
+      <!-- Teal 1.5px rule -->
+      <line x1="16" y1="43" x2="324" y2="43" stroke="#2DB8A6" stroke-width="1.6"/>
+
+      <!-- Task Row 1: today -->
+      <g transform="translate(0, 52)">
+        <rect x="16" y="7" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.5"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Finish lab report 17:00</text>
+        <rect x="276" y="4" width="48" height="18" rx="4" fill="#E28C50" fill-opacity="0.14"/>
+        <text x="300" y="16.5" text-anchor="middle" fill="#E28C50" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="600">today</text>
+        <line x1="16" y1="27" x2="324" y2="27" stroke="#34403F" stroke-opacity="0.65" stroke-width="1"/>
+      </g>
+
+      <!-- Task Row 2: tmrw -->
+      <g transform="translate(0, 79)">
+        <rect x="16" y="7" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.5"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Review lecture 4 slides</text>
+        <rect x="282" y="4" width="42" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+        <text x="303" y="16.5" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="600">tmrw</text>
+        <line x1="16" y1="27" x2="324" y2="27" stroke="#34403F" stroke-opacity="0.65" stroke-width="1"/>
+      </g>
+
+      <!-- Task Row 3: tue 13 -->
+      <g transform="translate(0, 106)">
+        <rect x="16" y="7" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.5"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Weekly problem sheet</text>
+        <rect x="270" y="4" width="54" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+        <text x="297" y="16.5" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="600">tue 13</text>
+        <line x1="16" y1="27" x2="324" y2="27" stroke="#34403F" stroke-opacity="0.65" stroke-width="1"/>
+      </g>
+
+      <!-- Task Row 4: undated (no badge) -->
+      <g transform="translate(0, 133)">
+        <rect x="16" y="7" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.5"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Clean up git branches</text>
+      </g>
+
+      <!-- EVENTS section (Rainmeter desktop only) -->
+      <text x="16" y="182" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="0.8">EVENTS</text>
+
+      <!-- Event Row 1 -->
+      <g transform="translate(0, 192)">
+        <circle cx="21" cy="13" r="2.6" fill="#93A3A6"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Physics exam 09:30</text>
+        <rect x="270" y="4" width="54" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+        <text x="297" y="16.5" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="600">mon 12</text>
+        <line x1="16" y1="27" x2="324" y2="27" stroke="#34403F" stroke-opacity="0.65" stroke-width="1"/>
+      </g>
+
+      <!-- Event Row 2 -->
+      <g transform="translate(0, 219)">
+        <circle cx="21" cy="13" r="2.6" fill="#93A3A6"/>
+        <text x="36" y="17" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Systems lab demo 14:00</text>
+        <rect x="270" y="4" width="54" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+        <text x="297" y="16.5" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5" font-weight="600">20 oct</text>
+      </g>
+
+      <!-- Footer -->
+      <text x="324" y="276" text-anchor="end" fill="#93A3A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10">synced 14:15</text>
+    </g>
+
+    <!-- Bottom capability pills -->
+    <g transform="translate(20, 354)" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">
+      <rect x="0" y="0" width="166" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="83" y="15.5" text-anchor="middle" fill="#94A3B8">Re-reads every 5s</text>
+
+      <rect x="176" y="0" width="174" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="263" y="15.5" text-anchor="middle" fill="#94A3B8">Desktop layer (Win+D)</text>
+
+      <rect x="360" y="0" width="160" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="440" y="15.5" text-anchor="middle" fill="#94A3B8">Click → Obsidian URI</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: ANDROID HOME-SCREEN WIDGET — open tasks only (matches widget.xml & Memory.kt) -->
+  <g transform="translate(616, 24)">
+    <rect width="560" height="392" rx="12" fill="url(#desktopBg)" stroke="#263138" stroke-width="1.2"/>
+
+    <text x="20" y="28" fill="#38BDF8" font-family="'SFMono-Regular', Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="0.9">ANDROID HOME SCREEN · KOTLIN WIDGET</text>
+    <text x="540" y="28" text-anchor="end" fill="#64748B" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">Open tasks only</text>
+
+    <!-- Phone bezel frame -->
+    <g transform="translate(108, 42)" filter="url(#cardShadow)">
+      <rect width="344" height="300" rx="22" fill="#0B0F14" stroke="#36414C" stroke-width="2"/>
+      <rect x="6" y="6" width="332" height="288" rx="17" fill="url(#phoneWall)"/>
+
+      <!-- Android status bar -->
+      <text x="22" y="23" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600">14:15</text>
+      <circle cx="172" cy="19" r="3.5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <rect x="298" y="15" width="18" height="8" rx="2" fill="none" stroke="#94A3B8" stroke-width="1.2"/>
+      <rect x="300" y="17" width="12" height="4" rx="1" fill="#4ADE80"/>
+
+      <!-- Android Widget Card (exact layout from widget.xml: serif title, Memory.summary(), teal rule, ListView of open tasks) -->
+      <g transform="translate(16, 38)">
+        <rect width="312" height="202" rx="14" fill="#1E1E1E" stroke="#34403F" stroke-width="1.2"/>
+        <rect x="1" y="1" width="310" height="200" rx="13" fill="url(#widgetGrid)"/>
+
+        <!-- Header -->
+        <text x="16" y="29" fill="#E6ECEA" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700">Tasks</text>
+        <text x="296" y="28" text-anchor="end" fill="#93A3A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10">4 open · 1 due today</text>
+        <line x1="16" y1="40" x2="296" y2="40" stroke="#2DB8A6" stroke-width="1.5"/>
+
+        <!-- Row 1: today -->
+        <g transform="translate(0, 50)">
+          <rect x="16" y="8" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.4"/>
+          <text x="36" y="18" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Finish lab report 17:00</text>
+          <rect x="248" y="5" width="48" height="18" rx="4" fill="#E28C50" fill-opacity="0.14"/>
+          <text x="272" y="17" text-anchor="middle" fill="#E28C50" font-family="'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="600">today</text>
+          <line x1="16" y1="33" x2="296" y2="33" stroke="#34403F" stroke-opacity="0.6" stroke-width="1"/>
+        </g>
+
+        <!-- Row 2: tmrw -->
+        <g transform="translate(0, 85)">
+          <rect x="16" y="8" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.4"/>
+          <text x="36" y="18" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Review lecture 4 slides</text>
+          <rect x="254" y="5" width="42" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+          <text x="275" y="17" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="600">tmrw</text>
+          <line x1="16" y1="33" x2="296" y2="33" stroke="#34403F" stroke-opacity="0.6" stroke-width="1"/>
+        </g>
+
+        <!-- Row 3: tue 13 -->
+        <g transform="translate(0, 120)">
+          <rect x="16" y="8" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.4"/>
+          <text x="36" y="18" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Weekly problem sheet</text>
+          <rect x="242" y="5" width="54" height="18" rx="4" fill="#2DB8A6" fill-opacity="0.14"/>
+          <text x="269" y="17" text-anchor="middle" fill="#2DB8A6" font-family="'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="600">tue 13</text>
+          <line x1="16" y1="33" x2="296" y2="33" stroke="#34403F" stroke-opacity="0.6" stroke-width="1"/>
+        </g>
+
+        <!-- Row 4: undated -->
+        <g transform="translate(0, 155)">
+          <rect x="16" y="8" width="11" height="11" rx="3" fill="none" stroke="#93A3A6" stroke-width="1.4"/>
+          <text x="36" y="18" fill="#E6ECEA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">Clean up git branches</text>
+        </g>
+      </g>
+
+      <!-- Subtle home-screen dock icons below widget -->
+      <g transform="translate(46, 256)" opacity="0.55">
+        <rect x="0" y="0" width="26" height="26" rx="7" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <rect x="56" y="0" width="26" height="26" rx="7" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <rect x="112" y="0" width="26" height="26" rx="7" fill="#2E1065" stroke="#7C3AED" stroke-width="1"/>
+        <rect x="168" y="0" width="26" height="26" rx="7" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+        <rect x="224" y="0" width="26" height="26" rx="7" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- Bottom capability pills -->
+    <g transform="translate(20, 354)" font-family="'SFMono-Regular', Consolas, monospace" font-size="10.5">
+      <rect x="0" y="0" width="166" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="83" y="15.5" text-anchor="middle" fill="#94A3B8">Plain Kotlin · 0 deps</text>
+
+      <rect x="176" y="0" width="174" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="263" y="15.5" text-anchor="middle" fill="#94A3B8">Syncthing via SAF</text>
+
+      <rect x="360" y="0" width="160" height="24" rx="6" fill="#161F26" stroke="#2B3942" stroke-width="1"/>
+      <text x="440" y="15.5" text-anchor="middle" fill="#94A3B8">Tap header → refresh</text>
+    </g>
+  </g>
+</svg>

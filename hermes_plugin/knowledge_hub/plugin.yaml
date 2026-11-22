@@ -1,0 +1,6 @@
+name: knowledge-hub
+version: 2.0.0
+description: "School hub: tell #memory or the Telegram chat what to remember (voice notes too), /todo, /done, /idea, a folder picker, and a read-only task list tool for the agent."
+provides_hooks:
+  - pre_gateway_dispatch
+  - pre_llm_call
